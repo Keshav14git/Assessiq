@@ -3,6 +3,7 @@ import { ModeToggle } from "./ModeToggle";
 import { CodeIcon } from "lucide-react";
 import { SignedIn, UserButton } from "@clerk/nextjs";
 import DasboardBtn from "./DasboardBtn";
+import Image from "next/image";
 
 function Navbar() {
   return (
@@ -11,12 +12,9 @@ function Navbar() {
         {/* LEFT SIDE -LOGO */}
         <Link
           href="/"
-          className="flex items-center gap-2 font-semibold text-2xl mr-6 font-mono hover:opacity-80 transition-opacity"
+          className="pt-4"
         >
-          <CodeIcon className="size-8 text-emerald-500" />
-          <span className="bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent">
-            CodeSync
-          </span>
+         <Image src={'/assessiq.png'} alt="logo" width={150} height={80} />
         </Link>
 
         {/* RIGHT SIDE - ACTIONS */}
