@@ -4,7 +4,7 @@
 
 Highlights:
 
-- 🚀 Tech stack: Next.js & TypeScript, Stream, Convex, Clerk
+- 🚀 Tech stack: Next.js & TypeScript, Stream, Convex, Clerk,
 - 🎥 Video Calls
 - 🖥️ Screen Sharing
 - 🎬 Screen Recording
