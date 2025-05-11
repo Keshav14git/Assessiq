@@ -20,8 +20,8 @@ export default function Home() {
   const [showModal, setShowModal] = useState(false);
   const [modalType, setModalType] = useState<"start" | "join">();
 
-  const handleQuickAction = (title: string) => {
-    switch (title) {
+  const handleQuickAction = (path: string) => {
+    switch (path) {
       case "New Call":
         setModalType("start");
         setShowModal(true);
@@ -31,7 +31,7 @@ export default function Home() {
         setShowModal(true);
         break;
       default:
-        router.push(`/${title.toLowerCase()}`);
+        router.push(`/${path.toLowerCase()}`);
     }
   };
 
@@ -56,9 +56,9 @@ export default function Home() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {QUICK_ACTIONS.map((action) => (
               <ActionCard
-                key={action.title}
+                key={action.path}
                 action={action}
-                onClick={() => handleQuickAction(action.title)}
+                onClick={() => handleQuickAction(action.path || "")}
               />
             ))}
           </div>

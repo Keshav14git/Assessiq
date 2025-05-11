@@ -1,10 +1,18 @@
 "use client";
-
+import { IoVideocam } from "react-icons/io5";
+import { FaUserFriends } from "react-icons/fa";
+import { HiCodeBracketSquare } from "react-icons/hi2";
+import { MdOutlineScreenShare } from "react-icons/md";
+import { RiCalendarScheduleFill } from "react-icons/ri";
+import { SiClerk } from "react-icons/si";
 import React, { useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import DevelopNotification from "@/components/ui/notification";
+
+
 
 export default function LandingPage() {
   const pathname = usePathname();
@@ -35,6 +43,7 @@ export default function LandingPage() {
 
   return (
     <div className="min-h-screen flex flex-col">
+    <DevelopNotification />
       {/* Hero Section */}
       <section className="flex-1 flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto py-20">
         <motion.div
@@ -83,20 +92,16 @@ export default function LandingPage() {
             {/* Feature 1 */}
             <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
               <div className="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
+                <FaUserFriends  className="w-6 h-6 text-green-500"  />
               </div>
               <h3 className="text-xl font-semibold mb-2">Interviewer & Candidate</h3>
-              <p className="text-gray-600 dark:text-gray-300">Defined roles for the user according to their demand.</p>
+              <p className="text-gray-600 dark:text-gray-300">Defined roles for the user accordingly.</p>
             </div>
             
             {/* Feature 2 */}
             <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
               <div className="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                </svg>
+                <IoVideocam className="w-6 h-6 text-green-500" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Live Meeting</h3>
               <p className="text-gray-600 dark:text-gray-300">live meetings with one or more candidates as well as Interviewer. </p>
@@ -105,9 +110,7 @@ export default function LandingPage() {
             {/* Feature 3 */}
             <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
               <div className="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                </svg>
+                <HiCodeBracketSquare className="w-6 h-6 text-green-500" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Code-Editor</h3>
               <p className="text-gray-600 dark:text-gray-300">Integrated Monaco CodeEditor powered by Microsoft.</p>
@@ -116,9 +119,7 @@ export default function LandingPage() {
             {/* Feature 4 */}
             <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
               <div className="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
-                </svg>
+                <MdOutlineScreenShare className="w-6 h-6 text-green-500" />
               </div>
               <h3 className="text-xl font-semibold mb-2">ScreenShare</h3>
               <p className="text-gray-600 dark:text-gray-300">Enabled ScreenShare for better intraction.</p>
@@ -127,21 +128,16 @@ export default function LandingPage() {
             {/* Feature 5 */}
             <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
               <div className="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
+                <RiCalendarScheduleFill className="w-6 h-6 text-green-500" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Schedule Meetings & Recordings</h3>
-              <p className="text-gray-600 dark:text-gray-300">Candidate can get their meetings(interview) scheduled by the interviewer and recordings of the every meeting can be saved for leter evaluation.</p>
+              <p className="text-gray-600 dark:text-gray-300">Candidate can get their meetings(interview) scheduled by the interviewer and recordings of the every meeting can be saved for later evaluation.</p>
             </div>
             
             {/* Feature 6 */}
             <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
               <div className="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                </svg>
+                <SiClerk className="w-6 h-6 text-green-500" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Clerk-Convex</h3>
               <p className="text-gray-600 dark:text-gray-300">Integration of Clerk Auth with serverless backend Convex.</p>
