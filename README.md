@@ -31,3 +31,8 @@ STREAM_SECRET_KEY=
 ```shell
 npm run dev
 ```
+
+🔗 [Check out the Assessiq](https://assessIqnow.vercel.app)
+
+
+
