@@ -3,7 +3,7 @@ import "./globals.css";
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Assessiq - Next Generation Assessment Platform',
+  title: 'SNIPP - Next Generation Assessment Platform',
   keywords: 'AI, interview, website, service',
   description: 'Interview and Assessment with Monaco',
 }
