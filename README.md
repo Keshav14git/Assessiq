@@ -1,19 +1,19 @@
-<h1 align="center">✨ Video Calling Interview Platform ✨</h1>
+<h1 align="center"> Remote Interview PlatForm </h1>
 
 
 
 Highlights:
 
-- 🚀 Tech stack: Next.js & TypeScript, Stream, Convex, Clerk,
-- 🎥 Video Calls
-- 🖥️ Screen Sharing
-- 🎬 Screen Recording
-- 🔒 Authentication & Authorization
-- 💻 Server Components, Layouts, Server Actions
-- 🎭 Client & Server Components
-- 🛣️ Dynamic & Static Routes
-- 🎨 Styling with Tailwind & Shadcn
-- ✨ Server Actions
+- Tech stack: Next.js & TypeScript, Stream, Convex, Clerk,
+- Video Calls
+- Screen Sharing
+- Screen Recording
+- Authentication & Authorization
+- Server Components, Layouts, Server Actions
+- Client & Server Components
+- Dynamic & Static Routes
+- Styling with Tailwind & Shadcn
+- Server Actions
 
 ### Setup .env file
 
@@ -31,3 +31,8 @@ STREAM_SECRET_KEY=
 ```shell
 npm run dev
 ```
+
+🔗 [Check out the Assessiq](https://assessIqnow.vercel.app)
+
+
+
