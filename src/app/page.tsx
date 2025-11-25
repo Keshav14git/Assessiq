@@ -61,12 +61,12 @@ export default function LandingPage() {
             />
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight">
-            AssessIQ : Next Generation
+            SNIPP : Next Generation
             <span className="block text-green-500">Assessment & Interview Platform</span>
           </h1>
           
           <p className="max-w-3xl mx-auto text-xl text-gray-600 dark:text-gray-300">
-            Streamline your hiring process with AssessIQ - the platform for remote interviews with Integrated Monaco Code-Editor.
+            Streamline your hiring process with SNIPP - the platform for remote interviews with Integrated Monaco Code-Editor.
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -203,7 +203,7 @@ export default function LandingPage() {
             </div>
             
             <div className="mt-4 md:mt-0">
-              <p className="text-gray-600 dark:text-gray-300">© {new Date().getFullYear()} AssessIQ. All rights reserved.</p>
+              <p className="text-gray-600 dark:text-gray-300">© {new Date().getFullYear()} SNIPP. All rights reserved.</p>
             </div>
           </div>
         </div>
